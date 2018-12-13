@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1116</width>
+    <height>833</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>EliteQuant</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../Downloads/EliteQuant-EliteQuant_Python-master/EliteQuant_Python/source/gui/image/logo.ico</normaloff>../Downloads/EliteQuant-EliteQuant_Python-master/EliteQuant_Python/source/gui/image/logo.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QSplitter" name="splitter_3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <widget class="QSplitter" name="splitter">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QTableWidget" name="tableWidgetMarket">
+        <column>
+         <property name="text">
+          <string>Symbol</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Last</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Volume</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Open Interest</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Bid Size</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Bid</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Ask</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Ask Size</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Yest. Close</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Open</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>High</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Low</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Time</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Source</string>
+         </property>
+        </column>
+       </widget>
+       <widget class="QWidget" name="formLayoutWidget">
+        <layout class="QFormLayout" name="formLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Discretionary</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="Label">
+           <property name="text">
+            <string>Symbol</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="LineEditCode"/>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="Label_2">
+           <property name="text">
+            <string>Name</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="LineEditName"/>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="Label_3">
+           <property name="text">
+            <string>Security Type</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QComboBox" name="ComboBoxContractType">
+           <item>
+            <property name="text">
+             <string>Stock</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Future</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Option</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Forex</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="Label_4">
+           <property name="text">
+            <string>Direction</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QComboBox" name="ComboBoxDirection">
+           <item>
+            <property name="text">
+             <string>Long</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Short</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="Label_5">
+           <property name="text">
+            <string>Order Flag</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QComboBox" name="ComboBox_BuyOrSell">
+           <item>
+            <property name="text">
+             <string>Open</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Close</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Close Yesterday</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Close Today</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="Label_6">
+           <property name="text">
+            <string>Price</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="QLineEdit" name="LineEdit_Price"/>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="Label_7">
+           <property name="text">
+            <string>Quantity</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QLineEdit" name="LineEdit_Quantity"/>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="Label_8">
+           <property name="text">
+            <string>Order Type</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QComboBox" name="ComboBox_OrderType">
+           <item>
+            <property name="text">
+             <string>Market</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Limit</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QLabel" name="Label_9">
+           <property name="text">
+            <string>Exchange</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QComboBox" name="ComboBox_Market"/>
+         </item>
+         <item row="10" column="0">
+          <widget class="QLabel" name="Label_10">
+           <property name="text">
+            <string>Account</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="1">
+          <widget class="QComboBox" name="ComboBox_Account"/>
+         </item>
+         <item row="11" column="1">
+          <widget class="QPushButton" name="pushButton_Order">
+           <property name="text">
+            <string>Place Order</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QSplitter" name="splitter_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>100</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QTabWidget" name="tabWidgetAccount">
+        <property name="currentIndex">
+         <number>4</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Log</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QTableWidget" name="tableWidgetLog">
+            <column>
+             <property name="text">
+              <string>Time</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Content</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Order</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QTableWidget" name="tableWidgetOrder">
+            <column>
+             <property name="text">
+              <string>Order ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Symbol</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Security Type</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Direction</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Order Flag</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Price</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Quantity</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Filled</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Status</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Order Time</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Cancel Time</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Exchange</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Account</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Source</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Fill</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QTableWidget" name="tableWidgetFill">
+            <column>
+             <property name="text">
+              <string>Order ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Fill ID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Symbol</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Security Type</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Direction</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Order Flag</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Fill Price</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Filled</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Fill Time</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Exchange</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Account</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Source</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_4">
+         <attribute name="title">
+          <string>Position</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QTableWidget" name="tableWidgetPosition">
+            <column>
+             <property name="text">
+              <string>Symbol</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Name</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Security Type</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Direction</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Quantity</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Yest. Quantity</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Freezed</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Average Price</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Open PnL</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Closed PnL</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Account</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Source</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Time</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_5">
+         <attribute name="title">
+          <string>Account</string>
+         </attribute>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QTableWidget" name="tableWidgetAccount">
+            <column>
+             <property name="text">
+              <string>AccountID</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Yest. Net</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Net</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Available</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Commission</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Margin</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Closed PnL</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Open PnL</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Brokerage</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>API</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Time</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Automatic</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="4">
+          <widget class="QTableWidget" name="tableWidgetStrategy">
+           <column>
+            <property name="text">
+             <string>SID</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Name</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>nHoldings</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>nTrades</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Open PnL</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Close PnL</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>Status</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="pushButton">
+           <property name="text">
+            <string>Start Strat</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="text">
+            <string>Pause Strat</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="text">
+            <string>Stop Strat</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QPushButton" name="pushButton_4">
+           <property name="text">
+            <string>Liquidate Strat</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1116</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionEnglish"/>
+    <addaction name="actionChinese"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionEnglish">
+   <property name="text">
+    <string>English</string>
+   </property>
+  </action>
+  <action name="actionChinese">
+   <property name="text">
+    <string>Chinese</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
