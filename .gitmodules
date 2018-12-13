@@ -1,0 +1,6 @@
+[submodule "ComplexEventProcessingEngine"]
+	path = ComplexEventProcessingEngine
+	url = https://github.com/espertechinc/esper.git
+[submodule "TradingPlatform"]
+	path = TradingPlatform
+	url = https://github.com/gopalanj/marketcetera.git
