@@ -4,3 +4,6 @@
 [submodule "TradingPlatform"]
 	path = TradingPlatform
 	url = https://github.com/gopalanj/marketcetera.git
+[submodule "TradingInterface"]
+	path = TradingInterface
+	url = https://github.com/vnpy/vnpy.git
